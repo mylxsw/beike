@@ -1,0 +1,35 @@
+package: "models"
+
+meta:
+  table_prefix: bk_
+
+models:
+  - name: deal_history
+    definition:
+      fields:
+        - name: id
+          type: int64
+        - name: area_id
+          type: string 
+        - name: area_name
+          type: string
+        - name: house_id
+          type: string
+        - name: name 
+          type: string 
+        - name: deal_price
+          type: float64
+        - name: sticker_price
+          type: float64
+        - name: unit_price
+          type: float64
+        - name: deal_date
+          type: time.Time
+        - name: deal_days
+          type: int64
+        - name: change_price_times
+          type: int64
+        - name: house_type
+          type: string
+        - name: house_size
+          type: float64
